@@ -1,0 +1,349 @@
+/* =========================
+   GENERAL
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --red:#c52429;
+    --gold:#ffd52f;
+    --cream:#fff8e3;
+    --brown:#5b3d2e;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:white;
+    color:#49382c;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    width:calc(100% - 60px);
+    margin:18px auto 30px;
+    padding:10px 35px;
+
+    background:var(--red);
+
+    border-radius:10px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.logo{
+    font-size:46px;
+    font-weight:700;
+    color:white;
+    letter-spacing:-2px;
+}
+
+.logo span{
+    color:var(--gold);
+}
+
+.nav-links{
+    display:flex;
+    gap:28px;
+    align-items:center;
+}
+
+.nav-links a{
+    text-decoration:none;
+    background:var(--gold);
+    color:black;
+    padding:8px 18px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:500;
+    transition:.25s;
+}
+
+.nav-links a:hover,
+.nav-links a.active{
+    background:white;
+    color:var(--red);
+}
+
+/* =========================
+   MAIN
+========================= */
+
+.container{
+    max-width:1280px;
+    margin:auto;
+    padding:0 25px 40px;
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.top-section{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:25px;
+}
+
+.title-area{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.title-icon{
+    width:52px;
+    height:52px;
+
+    background:#d8af2b;
+    border-radius:10px;
+
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:24px;
+}
+
+h1{
+    font-size:40px;
+    color:var(--brown);
+}
+
+.description{
+    margin-top:18px;
+
+    color:#776d69;
+
+    font-size:16px;
+    line-height:1.7;
+}
+
+/* =========================
+   SETTINGS
+========================= */
+
+.settings{
+    display:flex;
+    gap:12px;
+}
+
+.setting-btn{
+    width:48px;
+    height:48px;
+
+    border-radius:50%;
+
+    border:1px solid #edca4a;
+
+    background:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.2s;
+}
+
+.setting-btn:hover{
+    background:#fff8dc;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.content{
+    margin-top:45px;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:28px;
+}
+
+/* =========================
+   FAQ
+========================= */
+
+.faq-section{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.faq-item{
+    border:1px solid #efd047;
+    border-radius:14px;
+
+    background:white;
+
+    padding:18px 22px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    transition:.2s;
+}
+
+.faq-item:hover{
+    background:#fffdf4;
+}
+
+.faq-item span{
+    font-size:16px;
+    font-weight:600;
+}
+
+.faq-item button{
+    border:none;
+    background:none;
+
+    color:#c80000;
+
+    font-size:28px;
+
+    cursor:pointer;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.form-section{
+    border:1px solid #efd047;
+    border-radius:14px;
+
+    background:white;
+
+    padding:28px;
+}
+
+.form-group{
+    margin-bottom:20px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+
+    font-size:13px;
+    font-weight:700;
+}
+
+input,
+textarea{
+    width:100%;
+
+    border:1px solid #efd047;
+    border-radius:10px;
+
+    padding:14px 16px;
+
+    font-family:'Poppins',sans-serif;
+    font-size:14px;
+
+    outline:none;
+}
+
+textarea{
+    min-height:150px;
+    resize:vertical;
+}
+
+input:focus,
+textarea:focus{
+    border-color:#d8af2b;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.send-btn{
+    width:100%;
+    height:54px;
+
+    border:none;
+    border-radius:10px;
+
+    background:#b90000;
+
+    color:white;
+
+    font-family:'Poppins';
+    font-size:15px;
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.2s;
+}
+
+.send-btn:hover{
+    background:#980000;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:1000px){
+
+    .navbar{
+        flex-direction:column;
+        gap:18px;
+        padding:20px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:12px;
+    }
+
+    .top-section{
+        flex-direction:column;
+    }
+
+    .content{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .navbar{
+        width:calc(100% - 20px);
+        margin:10px;
+        padding:18px;
+    }
+
+    .logo{
+        font-size:40px;
+    }
+
+    h1{
+        font-size:30px;
+    }
+
+    .container{
+        width:calc(100% - 30px);
+        padding:0;
+    }
+
+}

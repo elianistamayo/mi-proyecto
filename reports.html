@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FIA'O | Reports</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="reports.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">FIA'O</div>
+
+<ul class="menu">
+<li><a href="index.html">Home</a></li>
+<li><a href="credit.html">Credit</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="clients.html">Clients</a></li>
+<li><a href="reports.html" class="active">Reports</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</nav>
+
+<main class="container">
+
+<section class="page-heading">
+
+<div>
+
+<h1>📊 FIA'O Reports</h1>
+
+<p>Financial tracking, credit summaries, and business analytics overview.</p>
+
+</div>
+
+<div class="export-buttons">
+
+<button>📄 Export PDF</button>
+
+<button>📗 Export Excel</button>
+
+</div>
+
+</section>
+
+<section class="filters card">
+
+<label>DATE RANGE</label>
+
+<div class="date-row">
+<div>📅 07/01/2026</div>
+<span>to</span>
+<div>07/31/2026</div>
+</div>
+
+<label>CUSTOMER STATUS / NAME</label>
+
+<div class="select-row">
+<span>👥 All Customers (All Names)</span>
+<b>⌄</b>
+</div>
+
+<button class="apply">⚑ Apply Filters</button>
+
+</section>
+
+<section class="stats">
+
+<article class="stat card">
+
+<div class="stat-top">
+<small>TOTAL ACTIVE CREDIT</small>
+<span class="icon">📊</span>
+</div>
+
+<strong>B/.1,450.00</strong>
+
+<em>↗ 8.4% from last month</em>
+
+</article>
+
+<article class="stat card">
+
+<div class="stat-top">
+<small>COLLECTED THIS MONTH</small>
+<span class="icon green">●</span>
+</div>
+
+<strong>B/.3,120.50</strong>
+
+<em>↗ 12.1% efficiency</em>
+
+</article>
+
+<article class="stat card">
+
+<div class="stat-top">
+<small>PENDING BALANCES</small>
+<span class="icon red">▲</span>
+</div>
+
+<strong>B/.340.00</strong>
+
+<em class="danger">↘ 3 accounts overdue</em>
+
+</article>
+
+<article class="stat card">
+
+<div class="stat-top">
+<small>TOTAL CUSTOMERS</small>
+<span class="icon blue">👤</span>
+</div>
+
+<strong>48</strong>
+
+<em>+5 new this month</em>
+
+</article>
+
+</section>
+
+<section class="analytics">
+
+<article class="chart-card card">
+
+<h2>Credit Activity & Payments Flow</h2>
+
+<div class="legend">
+
+<span><i class="dot gold"></i>Credit Issued</span>
+<span><i class="dot green"></i>Payments Received</span>
+<span><i class="dot red"></i>Overdue</span>
+
+</div>
+
+<div class="chart">
+
+<div class="group">
+<div class="bars">
+<i class="bar gold" style="height:40px"></i>
+<i class="bar green" style="height:60px"></i>
+<i class="bar red" style="height:15px"></i>
+</div>
+<span>Week 1</span>
+</div>
+
+<div class="group">
+<div class="bars">
+<i class="bar gold" style="height:52px"></i>
+<i class="bar green" style="height:74px"></i>
+<i class="bar red" style="height:25px"></i>
+</div>
+<span>Week 2</span>
+</div>
+
+<div class="group">
+<div class="bars">
+<i class="bar gold" style="height:34px"></i>
+<i class="bar green" style="height:48px"></i>
+<i class="bar red" style="height:12px"></i>
+</div>
+<span>Week 3</span>
+</div>
+
+<div class="group">
+<div class="bars">
+<i class="bar gold" style="height:66px"></i>
+<i class="bar green" style="height:86px"></i>
+<i class="bar red" style="height:28px"></i>
+</div>
+<span>Week 4</span>
+</div>
+
+</div>
+
+</article>
+
+<article class="payment-card card">
+
+<h2>Payment Status Breakdown</h2>
+
+<div class="payment-item">
+<div><b>On Time (75%)</b><strong>B/.2,340</strong></div>
+<div class="progress"><span class="p-green" style="width:75%"></span></div>
+</div>
+
+<div class="payment-item">
+<div><b>Pending (17%)</b><strong>B/.540</strong></div>
+<div class="progress"><span class="p-gold" style="width:17%"></span></div>
+</div>
+
+<div class="payment-item">
+<div><b>Overdue (8%)</b><strong>B/.240</strong></div>
+<div class="progress"><span class="p-red" style="width:8%"></span></div>
+</div>
+
+</article>
+
+</section>
+
+<section class="transactions card">
+
+<h2>Recent Credit Transactions</h2>
+
+<div class="table-wrap">
+
+<table>
+
+<thead>
+<tr>
+<th>Customer</th>
+<th>Description</th>
+<th>Amount</th>
+<th>Date</th>
+<th>Status</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td><strong>María Gómez</strong></td>
+<td>Grocery items & supplies</td>
+<td>B/.45.00</td>
+<td>2026-07-28</td>
+<td><span class="badge ontime">On Time</span></td>
+</tr>
+
+<tr>
+<td><strong>Carlos Mendoza</strong></td>
+<td>Weekly hardware credit</td>
+<td>B/.120.00</td>
+<td>2026-07-25</td>
+<td><span class="badge pending">Pending</span></td>
+</tr>
+
+<tr>
+<td><strong>Ana Ruiz</strong></td>
+<td>Bakery stock order</td>
+<td>B/.85.50</td>
+<td>2026-07-18</td>
+<td><span class="badge overdue">Overdue</span></td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<div class="pagination">
+
+<button class="current">1</button>
+<button>2</button>
+<button>3</button>
+
+</div>
+
+</section>
+
+</main>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FIA'O | Your credit notebook, now digital</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <div class="logo">
+            FIA'O
+        </div>
+
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="credit.html">Credit</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="clients.html">Clients</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- HERO -->
+    <main class="hero">
+
+        <div class="hero-text">
+
+            <h1>
+                Your <span>credit</span><br>
+                notebook,<br>
+                now digital.
+            </h1>
+
+            <p>
+                FIA'O digitizes customer, debt, and payment management for convenience stores and small businesses in Panama, replacing the traditional paper ledger with a modern digital management system.
+            </p>
+
+            <div class="buttons">
+                <button class="login" id="loginBtn">Login</button>
+                <button class="signup" id="signupBtn">Sign Up</button>
+            </div>
+
+        </div>
+
+        <!-- FIA'O IMAGE -->
+        <div class="hero-image">
+            <img src="FIA'O.png.png" alt="FIA'O mobile app">
+        </div>
+
+    </main>
+
+    <!-- REGISTER POPUP -->
+    <div class="modal" id="registerModal">
+
+        <div class="modal-content">
+
+            <span class="close" id="closeModal">&times;</span>
+
+            <h2>Create your account</h2>
+            <p class="modal-subtitle">Complete the form to get started</p>
+
+            <form id="registerForm">
+
+                <input type="text" placeholder="Full Name" required>
+
+                <input type="email" placeholder="Email Address" required>
+
+                <input type="text" placeholder="Phone Number" required>
+
+                <input type="text" placeholder="Business Name" required>
+
+                <input type="password" placeholder="Password" required>
+
+                <input type="password" placeholder="Confirm Password" required>
+
+                <button type="submit" class="modal-btn">Create My Account</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 FIA'O. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

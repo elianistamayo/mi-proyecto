@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIA'O | Clients</title>
+
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="clients.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <div class="logo">
+            FIA'O
+        </div>
+
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="credit.html">Credit</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="clients.html" class="active">Clients</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- MAIN -->
+    <main class="clients-page">
+
+        <div class="layout">
+
+            <!-- LEFT -->
+            <section class="hero">
+
+                <h1>Gestión de clientes</h1>
+
+                <h2>Cada cliente, con su cuenta clara</h2>
+
+                <p>
+                    Registra a tus clientes en segundos y mira de un vistazo quién está al día,
+                    quién debe y a quién hay que recordarle.
+                </p>
+
+                <img src="fiao.pgn.png" alt="FIA'O">
+
+            </section>
+
+            <!-- RIGHT -->
+            <section class="panel">
+
+                <!-- SEARCH -->
+                <div class="card search-card">
+
+                    <div class="search-box">
+                        🔍
+                        <input type="text" placeholder="Buscar cliente por nombre o teléfono...">
+                    </div>
+
+                    <div class="filters">
+                        <button class="selected">Todos</button>
+                        <button>Al día</button>
+                        <button>Pendiente</button>
+                        <button>Moroso</button>
+                    </div>
+
+                </div>
+
+                <!-- TABLE -->
+                <div class="card table-card">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+                                <th>CLIENTE</th>
+                                <th>COMPRAS</th>
+                                <th>DEUDA PENDIENTE</th>
+                                <th>ESTADO</th>
+                                <th>ACCIONES</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td class="client-cell">
+
+                                    <div class="avatar">RB</div>
+
+                                    <div>
+                                        <strong>Ramón Batista</strong>
+                                        <span>6123-4567</span>
+                                    </div>
+
+                                </td>
+
+                                <td>14 compras</td>
+
+                                <td><strong>B/.35.00</strong></td>
+
+                                <td><span class="badge pending">Pendiente</span></td>
+
+                                <td><a href="#">Ver detalle →</a></td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td class="client-cell">
+
+                                    <div class="avatar">YP</div>
+
+                                    <div>
+                                        <strong>Yolanda Pérez</strong>
+                                        <span>6234-8890</span>
+                                    </div>
+
+                                </td>
+
+                                <td>22 compras</td>
+
+                                <td>-</td>
+
+                                <td><span class="badge paid">Al día</span></td>
+
+                                <td><a href="#">Ver detalle →</a></td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td class="client-cell">
+
+                                    <div class="avatar">CR</div>
+
+                                    <div>
+                                        <strong>Carlos Ruiz</strong>
+                                        <span>6301-2245</span>
+                                    </div>
+
+                                </td>
+
+                                <td>9 compras</td>
+
+                                <td><strong>B/.62.50</strong></td>
+
+                                <td><span class="badge overdue">Moroso</span></td>
+
+                                <td><a href="#">Ver detalle →</a></td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td class="client-cell">
+
+                                    <div class="avatar">MS</div>
+
+                                    <div>
+                                        <strong>Mireya Santos</strong>
+                                        <span>6415-7783</span>
+                                    </div>
+
+                                </td>
+
+                                <td>31 compras</td>
+
+                                <td><strong>B/.12.00</strong></td>
+
+                                <td><span class="badge pending">Pendiente</span></td>
+
+                                <td><a href="#">Ver detalle →</a></td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <!-- REMINDER -->
+                <div class="card reminder">
+
+                    <div>
+
+                        <h3>Recordatorio Automático Enviado</h3>
+
+                        <p>
+                            WhatsApp a Ramón Batista:
+                            "Hola Ramón, tienes B/.35.00 pendientes en Mini Súper Doña Chela."
+                        </p>
+
+                    </div>
+
+                    <button>Enviar</button>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</body>
+</html>

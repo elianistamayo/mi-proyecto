@@ -1,0 +1,478 @@
+/* GENERAL */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#b91c1c;
+    color:#222;
+}
+
+/* NAVBAR */
+
+.navbar{
+    width:calc(100% - 60px);
+    margin:22px auto 25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:7px 35px;
+    background:#bd2828;
+    border-radius:8px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.logo{
+    font-size:48px;
+    font-weight:bold;
+    color:#fff;
+}
+
+.menu{
+    display:flex;
+    list-style:none;
+    gap:45px;
+    align-items:center;
+}
+
+.menu a{
+    text-decoration:none;
+    color:#000;
+    font-size:12px;
+    background:#ffcc28;
+    padding:7px 18px;
+    border-radius:20px;
+    transition:.2s;
+}
+
+/* Hover */
+
+.menu a:hover{
+    background:#fff;
+    color:#bd2828;
+}
+
+/* Página activa */
+
+.menu a.active{
+    background:#fff;
+    color:#bd2828;
+    font-weight:bold;
+    box-shadow:0 2px 8px rgba(0,0,0,.25);
+}
+
+/* MAIN */
+
+.credit-page{
+    width:100%;
+    padding:35px 0 30px;
+}
+
+/* HEADER */
+
+.credit-header{
+    width:825px;
+    margin:0 auto 20px;
+}
+
+.credit-header h1{
+    display:inline-block;
+    color:#fff;
+    font-size:28px;
+    background:#2854d9;
+    padding:2px 5px;
+    margin-bottom:5px;
+}
+
+.credit-header p{
+    color:#fff;
+    font-size:11px;
+}
+
+/* DASHBOARD */
+
+.dashboard{
+    width:825px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:240px 290px 265px;
+    gap:15px;
+    align-items:start;
+}
+
+.left-column,
+.center-column,
+.right-column{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+/* CARDS */
+
+.card{
+    background:#fff2bf;
+    border-radius:10px;
+    padding:16px;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+.card h2{
+    font-size:14px;
+    color:#49382c;
+    margin-bottom:8px;
+}
+
+.card h3{
+    font-size:11px;
+    color:#49382c;
+    margin-bottom:10px;
+}
+
+/* CUSTOMER */
+
+.customer-select{
+    height:85px;
+}
+
+.customer-select select{
+    width:100%;
+    height:35px;
+    padding:0 10px;
+    border:1px solid #ff9e00;
+    border-radius:7px;
+    background:#fff;
+    font-weight:bold;
+    font-size:11px;
+}
+
+.customer-info{
+    height:157px;
+}
+
+.customer-info h2{
+    margin-bottom:15px;
+}
+
+.info-boxes{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:8px;
+}
+
+.info-box{
+    background:#fff;
+    border:1px solid #ff9e00;
+    border-radius:7px;
+    padding:9px;
+}
+
+.info-box span{
+    display:block;
+    font-size:8px;
+    margin-bottom:3px;
+}
+
+.info-box strong{
+    color:#c91c1c;
+    font-size:14px;
+}
+
+.progress{
+    width:100%;
+    height:5px;
+    background:#fff;
+    border-radius:5px;
+    margin-top:13px;
+}
+
+.progress-bar{
+    width:35%;
+    height:100%;
+    background:#d32222;
+    border-radius:5px;
+}
+
+.limit-text{
+    display:flex;
+    justify-content:space-between;
+    font-size:8px;
+    margin-top:6px;
+}
+
+/* BLOCK */
+
+.blocking{
+    min-height:78px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.blocking p{
+    width:165px;
+    font-size:8px;
+    line-height:1.4;
+    color:#765c4a;
+}
+
+/* TOGGLE */
+
+.toggle{
+    width:32px;
+    height:17px;
+    border-radius:20px;
+    background:#df291f;
+    padding:2px;
+}
+
+.toggle div{
+    width:13px;
+    height:13px;
+    background:#fff;
+    border-radius:50%;
+    margin-left:auto;
+}
+
+/* HISTORY */
+
+.debt-history{
+    height:272px;
+}
+
+.small-text{
+    font-size:8px;
+    color:#765c4a;
+    margin-bottom:10px;
+}
+
+.history-list{
+    display:flex;
+    flex-direction:column;
+    gap:7px;
+}
+
+.history-item{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    padding:5px 7px;
+    background:#fff;
+    border:1px solid #ffb000;
+    border-radius:7px;
+}
+
+.date{
+    width:28px;
+    text-align:center;
+    border:1px solid #ffb000;
+    border-radius:5px;
+    padding:3px;
+}
+
+.date strong{
+    display:block;
+    font-size:9px;
+}
+
+.date span{
+    font-size:6px;
+}
+
+.history-icon{
+    font-size:13px;
+}
+
+.history-name{
+    flex:1;
+}
+
+.history-name strong{
+    display:block;
+    font-size:9px;
+}
+
+.history-name span{
+    font-size:7px;
+}
+
+.amount{
+    font-size:9px;
+}
+
+.red{
+    color:#d32222;
+}
+
+.green{
+    color:#197653;
+}
+
+.status{
+    font-size:6px;
+    padding:4px 6px;
+    border-radius:4px;
+}
+
+.pending{
+    background:#ffdb62;
+    color:#8b6500;
+}
+
+.paid{
+    background:#c8f4d9;
+    color:#18734c;
+}
+
+.history-button{
+    margin-top:8px;
+    border:none;
+    background:none;
+    color:#d32222;
+    font-size:8px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* PAYMENT */
+
+.register-payment label{
+    display:block;
+    font-size:8px;
+    font-weight:bold;
+    margin-bottom:5px;
+}
+
+.register-payment input[type=text]{
+    width:100%;
+    height:32px;
+    border:1px solid #ff9e00;
+    border-radius:7px;
+    padding:0 10px;
+    margin-bottom:10px;
+}
+
+.payment-types{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:12px;
+}
+
+.payment-types label{
+    font-size:8px;
+    font-weight:normal;
+}
+
+.payment-buttons{
+    display:flex;
+    gap:7px;
+}
+
+.payment-buttons button{
+    flex:1;
+    height:32px;
+    border-radius:6px;
+    font-size:8px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.register-button{
+    background:#ffb915;
+    border:1px solid #e09a00;
+}
+
+.paid-button{
+    background:#fff;
+    border:1px solid #ff9e00;
+}
+
+/* RECENT */
+
+.activity{
+    display:flex;
+    flex-direction:column;
+}
+
+.activity-item{
+    display:flex;
+    align-items:center;
+    gap:7px;
+    padding:10px 0;
+    border-bottom:1px solid #dfcf9c;
+}
+
+.activity-icon{
+    width:25px;
+    height:25px;
+    background:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.activity-item strong{
+    font-size:8px;
+}
+
+.activity-item p{
+    font-size:7px;
+    color:#765c4a;
+}
+
+.activity-time{
+    margin-left:auto;
+    font-size:7px;
+}
+
+.activity-link{
+    display:block;
+    color:#d32222;
+    font-size:8px;
+    font-weight:bold;
+    text-decoration:none;
+    margin-top:10px;
+}
+
+/* OVERVIEW */
+
+.overview-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:7px;
+}
+
+.overview-box{
+    background:#fff;
+    border:1px solid #ff9e00;
+    border-radius:7px;
+    padding:8px;
+}
+
+.overview-box span{
+    display:block;
+    font-size:7px;
+    margin-bottom:3px;
+}
+
+.overview-box strong{
+    color:#d32222;
+    font-size:11px;
+}
+
+/* FOOTER */
+
+footer{
+    width:825px;
+    margin:0 auto;
+    border-top:1px solid rgba(255,255,255,.2);
+    text-align:center;
+    padding:12px;
+    color:#fff;
+    font-size:8px;
+}

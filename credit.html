@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIA'O | Debts & Payments</title>
+    <link rel="stylesheet" href="credit.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <div class="logo">
+            FIA'O
+        </div>
+
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="credit.html" class="active">Credit</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="clients.html">Clients</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- CREDIT PAGE -->
+    <main class="credit-page">
+
+        <!-- TITLE -->
+        <section class="credit-header">
+            <h1>Debts & Payments</h1>
+
+            <p>
+                Manage customer debts, register payments, and track balances easily.
+            </p>
+        </section>
+
+        <!-- DASHBOARD -->
+        <section class="dashboard">
+
+            <!-- LEFT COLUMN -->
+            <div class="left-column">
+
+                <div class="card customer-select">
+                    <h3>👤 Select a Customer</h3>
+
+                    <select>
+                        <option>Ramón Batista</option>
+                        <option>Carlos Gómez</option>
+                        <option>Ana Martínez</option>
+                    </select>
+                </div>
+
+                <div class="card customer-info">
+
+                    <h2>🔴 Ramón Batista</h2>
+
+                    <div class="info-boxes">
+
+                        <div class="info-box">
+                            <span>Current Debt</span>
+                            <strong>B/. 35.00</strong>
+                        </div>
+
+                        <div class="info-box">
+                            <span>Credit Limit</span>
+                            <strong>B/. 100.00</strong>
+                        </div>
+
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-bar"></div>
+                    </div>
+
+                    <div class="limit-text">
+                        <span>35% used</span>
+                        <span>Limit: B/. 100.00</span>
+                    </div>
+
+                </div>
+
+                <div class="card blocking">
+
+                    <div>
+                        <h3>🛡 Automatic Blocking</h3>
+
+                        <p>
+                            If a customer exceeds the debt limit, the system prevents new credits.
+                        </p>
+                    </div>
+
+                    <div class="toggle">
+                        <div></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- CENTER COLUMN -->
+            <div class="center-column">
+
+                <div class="card debt-history">
+
+                    <h2>Debt History</h2>
+
+                    <p class="small-text">
+                        Track all purchases and payments.
+                    </p>
+
+                    <div class="history-list">
+
+                        <div class="history-item">
+
+                            <div class="date">
+                                <strong>14</strong>
+                                <span>JUL</span>
+                            </div>
+
+                            <div class="history-icon">🛒</div>
+
+                            <div class="history-name">
+                                <strong>Milk (2)</strong>
+                                <span>Fiado</span>
+                            </div>
+
+                            <strong class="amount red">B/. 8.00</strong>
+
+                            <span class="status pending">Pending</span>
+
+                        </div>
+
+                        <div class="history-item">
+
+                            <div class="date">
+                                <strong>09</strong>
+                                <span>JUL</span>
+                            </div>
+
+                            <div class="history-icon">🛒</div>
+
+                            <div class="history-name">
+                                <strong>Detergent</strong>
+                                <span>Fiado</span>
+                            </div>
+
+                            <strong class="amount red">B/. 4.50</strong>
+
+                            <span class="status pending">Pending</span>
+
+                        </div>
+
+                        <div class="history-item">
+
+                            <div class="date">
+                                <strong>05</strong>
+                                <span>JUL</span>
+                            </div>
+
+                            <div class="history-icon">💵</div>
+
+                            <div class="history-name">
+                                <strong>Payment Received</strong>
+                                <span>Abono</span>
+                            </div>
+
+                            <strong class="amount green">-B/. 20.00</strong>
+
+                            <span class="status paid">Paid</span>
+
+                        </div>
+
+                        <div class="history-item">
+
+                            <div class="date">
+                                <strong>01</strong>
+                                <span>JUL</span>
+                            </div>
+
+                            <div class="history-icon">🛒</div>
+
+                            <div class="history-name">
+                                <strong>Groceries</strong>
+                                <span>Fiado</span>
+                            </div>
+
+                            <strong class="amount red">B/. 12.50</strong>
+
+                            <span class="status pending">Pending</span>
+
+                        </div>
+
+                    </div>
+
+                    <button class="history-button">View Full History →</button>
+
+                </div>
+
+                <div class="card register-payment">
+
+                    <h2>Register Payment</h2>
+
+                    <p class="small-text">
+                        Record payments made by the customer.
+                    </p>
+
+                    <label>Payment Amount</label>
+
+                    <input type="text" placeholder="B/. 0.00">
+
+                    <label>Payment Type</label>
+
+                    <div class="payment-types">
+
+                        <label>
+                            <input type="radio" name="payment" checked>
+                            Partial Payment
+                        </label>
+
+                        <label>
+                            <input type="radio" name="payment">
+                            Full Payment
+                        </label>
+
+                    </div>
+
+                    <div class="payment-buttons">
+
+                        <button class="register-button">
+                            Register Payment
+                        </button>
+
+                        <button class="paid-button">
+                            Mark as Paid
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT COLUMN -->
+            <div class="right-column">
+
+                <div class="card recent">
+
+                    <h2>Recent Activity</h2>
+
+                    <div class="activity">
+
+                        <div class="activity-item">
+
+                            <div class="activity-icon">🧾</div>
+
+                            <div>
+                                <strong>Ramón Batista</strong>
+                                <p>Paid B/. 15.00</p>
+                            </div>
+
+                            <span class="activity-time">Today 🟢</span>
+
+                        </div>
+
+                        <div class="activity-item">
+
+                            <div class="activity-icon">🛒</div>
+
+                            <div>
+                                <strong>Carlos Gómez</strong>
+                                <p>New debt: B/. 12.50</p>
+                            </div>
+
+                            <span class="activity-time">Yesterday 🟡</span>
+
+                        </div>
+
+                        <div class="activity-item">
+
+                            <div class="activity-icon">💵</div>
+
+                            <div>
+                                <strong>Ana Martínez</strong>
+                                <p>Payment received: B/. 20.00</p>
+                            </div>
+
+                            <span class="activity-time">Yesterday 🟢</span>
+
+                        </div>
+
+                    </div>
+
+                    <a href="#" class="activity-link">
+                        View all activity →
+                    </a>
+
+                </div>
+
+                <div class="card overview">
+
+                    <h2>Debt Overview</h2>
+
+                    <div class="overview-grid">
+
+                        <div class="overview-box">
+                            <span>Outstanding Debt</span>
+                            <strong>B/. 480.00</strong>
+                        </div>
+
+                        <div class="overview-box">
+                            <span>Payments Today</span>
+                            <strong>B/. 150.00</strong>
+                        </div>
+
+                        <div class="overview-box">
+                            <span>Customers with Debt</span>
+                            <strong>18</strong>
+                        </div>
+
+                        <div class="overview-box">
+                            <span>Overdue</span>
+                            <strong>4</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 FIA'O. Manage today for a better tomorrow.</p>
+    </footer>
+
+</body>
+
+</html>
